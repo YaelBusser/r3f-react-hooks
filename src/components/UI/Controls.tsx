@@ -1,6 +1,6 @@
 import {button, useControls} from "leva";
 import * as THREE from "three";
-import {useCube} from "../../hooks/useTheme";
+import {useCube} from "../../hooks/context/CubeContext";
 
 const Controls = () => {
 

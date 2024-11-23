@@ -1,20 +1,20 @@
 import {createContext, useContext, useRef, useState} from "react";
 
 // @ts-ignore
-export const ColorCubeContext = createContext();
+export const CubeContext = createContext();
 
 export const CubeProvider = ({children}: any) => {
     const [color, setColor] = useState("red");
     const ref = useRef();
     return (
-        <ColorCubeContext.Provider value={{color, setColor, ref}}>
+        <CubeContext.Provider value={{color, setColor, ref}}>
             {children}
-        </ColorCubeContext.Provider>
+        </CubeContext.Provider>
     )
 }
 
 export const useCube = () => {
-    const context = useContext(ColorCubeContext);
+    const context = useContext(CubeContext);
     if(context === undefined){
         throw new Error("theme must be used within a provider")
     }

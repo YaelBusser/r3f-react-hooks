@@ -1,6 +1,6 @@
 import {memo, useCallback, useEffect, useMemo, useState} from "react";
 import * as THREE from "three";
-import {useCube} from "../../hooks/useTheme";
+import {useCube} from "../../hooks/context/CubeContext";
 
 const Cube = memo((props: any) => {
     console.log("Cube rendered");
