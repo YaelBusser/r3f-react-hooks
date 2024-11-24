@@ -4,7 +4,7 @@ import {createContext, useContext, useRef, useState} from "react";
 export const CubeContext = createContext();
 
 export const CubeProvider = ({children}: any) => {
-    const [color, setColor] = useState("red");
+    const [color, setColor] = useState("white");
     const ref = useRef();
     return (
         <CubeContext.Provider value={{color, setColor, ref}}>

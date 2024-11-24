@@ -7,6 +7,7 @@ const Controls = () => {
     const {setColor, ref}: any = useCube();
 
     useControls({
+        colorToWhite: button(() => setColor("white")),
         colorToRed: button(() => setColor("red")),
         colorToGreen: button(() => setColor("green")),
         colorToBlue: button(() => setColor("blue")),

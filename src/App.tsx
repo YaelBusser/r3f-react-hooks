@@ -1,8 +1,8 @@
 import './App.css'
 import {Canvas} from "@react-three/fiber";
 import {ContactShadows, Environment, OrbitControls} from "@react-three/drei";
-import Cube from "./components/models/Cube";
 import ControlsUI from "./components/UI/Controls";
+import MainScene from "./components/scenes/main";
 function App() {
     return (
         <Canvas camera={{
@@ -10,7 +10,7 @@ function App() {
         }}>
             <ControlsUI/>
             <OrbitControls/>
-            <Cube />
+            <MainScene />
             <ContactShadows
                 position-y={-2}
                 opacity={0.5}
